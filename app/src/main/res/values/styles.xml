@@ -1,0 +1,56 @@
+<resources>
+    <!-- Tema base para la aplicación -->
+    <style name="Theme.BarberiaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores primarios y secundarios -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Colores de fondo y texto -->
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+
+
+            <!-- Estilo personalizado para DatePicker -->
+            <style name="CustomDatePickerStyle">
+                <item name="android:textColor">#FF5733</item> <!-- Color del texto -->
+                <item name="android:textSize">18sp</item> <!-- Tamaño del texto -->
+                <item name="android:background">@android:color/white</item> <!-- Fondo blanco -->
+            </style>
+
+
+        <!-- Estilo para la barra de estado -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+        <!-- Estilo para botones -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- Estilo para el modo oscuro -->
+    <style name="Theme.BarberiaApp.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Estilo para el botón personalizado -->
+    <style name="CustomButtonStyle">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- Estilo de texto para un título -->
+    <style name="CustomTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
